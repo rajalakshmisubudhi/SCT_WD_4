@@ -1,0 +1,117 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(/image\ 1.webp) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    min-height: 100vh; 
+}
+
+.container{
+    background: rgba(42, 42, 40, 0.7);
+    color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="datetime-local"]{
+    padding: 12px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+input[type="text"]::placeholder{
+    color: #555;
+}
+
+button,
+.task-actions button{
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button{
+    padding: 12px;
+    font-size: 16px;
+    background: #76d84c;
+    color: #022113;
+}
+
+button:hover{
+    background: #88ae94;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+li{
+    background: rgba(243, 242, 242, 0.9);
+    color: #000000;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-actions button{
+    margin-left: 5px;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.task-actions button:first-child{
+    background: #9b1818;
+    color: #fff;
+}
+
+.task-actions button:first-child:hover{
+    background: #226fff;
+}
+
+.task-actions button:nth-child(2){
+    background: #dfe60c;
+    color: #2e2a06;
+}
+.task-actions button:nth-child(2):hover{
+    background: #226fff;
+
+}
+.task-actions button:last-child{
+    background: #290380;
+    color: #fff;
+}
+
+.task-actions button:last-child:hover{
+    background: #226fff;
+}
